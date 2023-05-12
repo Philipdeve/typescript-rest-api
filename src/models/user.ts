@@ -10,6 +10,7 @@ const studentSchema = new Schema<IStudent>({
   name: {
     type: String,
     required: true,
+    unique: true
   },
   age: {
     type: Number,

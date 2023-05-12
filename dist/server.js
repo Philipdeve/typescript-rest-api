@@ -25,7 +25,6 @@ app.use(express_1.default.json());
 //routes
 app.get("/", (req, res) => {
     res.send("Express + TypeScript Server");
-    res.json({ msg: "welcome" });
 });
 app.use('/api', user_1.default);
 const startServer = () => __awaiter(void 0, void 0, void 0, function* () {

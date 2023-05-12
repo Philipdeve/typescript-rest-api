@@ -11,12 +11,11 @@ const port = process.env.PORT;
 import { connectToDB } from "./db/connect";
 
 //middlewares
-app.use(express.json());
+app.use(express.json())
 
 //routes
 app.get("/", (req: Request, res: Response) => {
   res.send("Express + TypeScript Server");
-  res.json({msg: "welcome"});
 });
 app.use('/api', router);
 
